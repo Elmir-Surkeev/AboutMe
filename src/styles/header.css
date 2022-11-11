@@ -1,0 +1,30 @@
+.logo {
+  height: 110px;
+  width: 120px;
+  box-sizing: border-box;
+}
+.header {
+  top: -10px;
+  left: 130px;
+  position: fixed;
+  margin: 10px auto;
+  width: 1200px;
+  height: 10%;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+}
+a {
+  text-decoration: none;
+}
+.education {
+  padding: 25px 30px;
+  padding-top: 55px;
+  align-items: center;
+  display: flex;
+  padding-left: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 23px;
+}
+.education a {
+  color: blue;
+}

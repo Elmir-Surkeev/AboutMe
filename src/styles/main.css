@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,500;1,600&display=swap");
+.container {
+  margin: 10px 40px;
+}
+.main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-picture-change {
+  height: 100%;
+}
+.myPhoto {
+  position: fixed;
+  top: 130px;
+  left: 120px;
+  box-sizing: border-box;
+  width: 40%;
+  height: 630px;
+  display: block;
+}
+
+.main-about {
+  margin-top: 90px;
+  margin-left: 120px;
+  width: 500px;
+  line-height: 55px;
+}
+.bigTitle {
+  margin-top: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 70px;
+  color: #2637cd;
+}
+.title {
+  margin-top: 45px;
+  margin-bottom: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 50px;
+  color: #2637cd;
+}
+
+.desc {
+  color: #171b1e;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 700;
+  font-style: italic;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.underTitle {
+  font-weight: 700;
+  font-style: italic;
+  font-family: Montserrat;
+  margin-top: 20px;
+  line-height: 25px;
+  color: #10161b;
+  font-size: 20px;
+  font-weight: 400;
+}
