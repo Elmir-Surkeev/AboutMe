@@ -7,9 +7,19 @@ import Telegram from "./UI/telegramm.png";
 import "./styles/main.css";
 import MainInfo from "./MainInfo";
 import Gallery from "./Gallery";
+import FriendPhoto from "./UI/friend1.jpg";
+import FriendPhoto2 from "./UI/friend2.jpg";
+import FriendPhoto3 from "./UI/oigonuu1.jpg";
+import FriendPhoto4 from "./UI/oigonuu2.jpg";
+import Adverst from "./UI/adverst-photo.jpg";
 const Main = () => {
   return (
     <div className="container">
+      <div className="adverst">
+        <a href="https://instagram.com/oigonuu?igshid=YmMyMTA2M2Y">
+          <img src={Adverst} alt="adverst" />
+        </a>
+      </div>
       <div className="main">
         <div className="main-picture-change">
           <img className="myPhoto" src={Photo} alt="My photo" />
@@ -25,7 +35,7 @@ const Main = () => {
             desc="Фронт-енд разрабочик это тот человек который создает различные веб приложения. Начиная с самых простых одностраничных лендингов до многофунциональных интернет магазинов. Фронтенд разрабочик очень востребованная проффесия и в тоже время ответственная проффесия"
           />
           <button>Узнать больше</button>
-          {/* <Btn text="Узнать о соц сетях" /> */}
+
           <MainInfo
             title="ментор проекта Ойгонуу"
             desc="Проект Ойгонуу это просто потрясающий проект в котором я начал обучаться сфере IT. С самого начал проекта он был неизвестным проектом, но со временем его популярность выросла. На данный момент у проекта Ойгонуу около 80 выпустников и 100 учащихся в Южной части Кыргызстана"
@@ -49,10 +59,11 @@ const Main = () => {
           <MainInfo title="мой соц сети" />
           <div className="contacts">
             <div className="social-app">
-              <a ref="https://www.facebook.com/elmirbek.surkeev">
+              <a href="https://www.facebook.com/elmirbek.surkeev">
                 <img src={Facebook_ico} alt="Facebook Profile" />
               </a>
             </div>
+
             <div className="social-app">
               <a href="https://www.instagram.com/invites/contact/?i=j0zxwnufas2&utm_content=hsut6gw">
                 <img src={Inst} alt="Instagram Profile" />
@@ -68,6 +79,27 @@ const Main = () => {
                 <img src={Telegram} alt="Telegramm Profile" />
               </a>
             </div>
+          </div>
+          <MainInfo desc="В целом веду очень активынй образ жизни. Много чем увлекаюсь и учавствую в различным мероприятих" />
+          <div className="contacts-photo">
+            <div className="friends-photo">
+              <img src={FriendPhoto} alt="my friends" />
+            </div>
+            <div className="friends-photo">
+              <img src={FriendPhoto4} alt="my friends" />
+            </div>
+            <div className="friends-photo">
+              <img src={FriendPhoto2} alt="my friends" />
+            </div>
+            <div className="friends-photo">
+              <img src={FriendPhoto3} alt="my friends" />
+            </div>
+          </div>
+          <div className="developMan">
+            Разработка сайта{" "}
+            <a href="https://www.linkedin.com/in/elmirbek-surkeev-b91876256">
+              Элмир Суркеев
+            </a>
           </div>
         </div>
       </div>

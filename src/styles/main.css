@@ -15,7 +15,7 @@
   top: 130px;
   left: 120px;
   box-sizing: border-box;
-  width: 40%;
+  width: 560px;
   height: 630px;
   display: block;
 }
@@ -86,10 +86,44 @@ button:hover {
 .social-app img {
   width: 37px;
   height: 37px;
+  margin-top: 10px;
 }
 .contacts {
-  margin: 20px 0;
   width: 240px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: -50px;
+}
+.contacts-photo {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.friends-photo img {
+  border-radius: 10px;
+  width: 240px;
+  height: 170px;
+  box-sizing: border-box;
+}
+.developMan {
+  margin: 40px 0px 20px 30px;
+  color: #171b1e;
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 700;
+  font-family: Montserrat;
+  font-weight: 400;
+}
+.developMan a {
+  text-decoration: underline;
+}
+.adverst img {
+  opacity: 0.7;
+  box-sizing: border-box;
+  width: 230px;
+  position: fixed;
+  right: 0px;
+  top: 0;
+  height: 140px;
 }
