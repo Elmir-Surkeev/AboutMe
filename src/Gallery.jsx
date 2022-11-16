@@ -7,16 +7,16 @@ import "./styles/gallery.css";
 const Gallery = () => {
   return (
     <div className="block">
-      <div className="photo">
+      <div className="photo deletedPhotos">
         <img src={firstPhoto} alt="Jashtar Parlamenty" />
       </div>
-      <div className="photo">
+      <div className="photo deletedPhotos">
         <img src={secondPhoto} alt="Jashtar Parlamenty" />
       </div>
       <div className="photo">
         <img src={thirdPhoto} alt="Jashtar Parlamenty" />
       </div>
-      <div className="photo">
+      <div className="photo deletedPhotos">
         <img src={fourPhoto} alt="Jashtar Parlamenty" />
       </div>
     </div>

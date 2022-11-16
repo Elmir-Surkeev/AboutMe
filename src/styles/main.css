@@ -10,16 +10,6 @@
 .main-picture-change {
   height: 100%;
 }
-.myPhoto {
-  position: fixed;
-  top: 130px;
-  left: 120px;
-  box-sizing: border-box;
-  width: 560px;
-  height: 630px;
-  display: block;
-}
-
 .main-about {
   margin-top: 90px;
   margin-left: 120px;
@@ -79,6 +69,7 @@ button {
 }
 button a {
   color: white;
+  text-decoration: none;
 }
 button:hover {
   background-color: rgba(254, 152, 50, 0.904);
@@ -107,7 +98,7 @@ button:hover {
   box-sizing: border-box;
 }
 .developMan {
-  margin: 40px 0px 20px 30px;
+  margin: 40px 0px 20px 10px;
   color: #171b1e;
   font-size: 22px;
   line-height: 25px;
@@ -121,9 +112,47 @@ button:hover {
 .adverst img {
   opacity: 0.7;
   box-sizing: border-box;
-  width: 230px;
+  width: 220px;
   position: fixed;
   right: 0px;
   top: 0;
   height: 140px;
+}
+
+.myPhoto {
+  position: fixed;
+  top: 130px;
+  left: 120px;
+  box-sizing: border-box;
+  width: 560px;
+  height: 630px;
+  display: block;
+}
+.active {
+  display: block;
+}
+
+@media only screen and (max-width: 1100px) {
+  .main-picture-change img {
+    display: none;
+  }
+  .adverst a img {
+    box-sizing: border-box;
+    width: 70px;
+    position: fixed;
+    right: 0px;
+    top: 0;
+    height: 40px;
+  }
+  .developMan {
+    margin-top: 105px;
+  }
+  .main-about {
+    margin-top: 90px;
+    width: 500px;
+    line-height: 55px;
+  }
+  .deletedPhotos {
+    display: none;
+  }
 }

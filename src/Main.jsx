@@ -1,5 +1,4 @@
 import React from "react";
-import Photo from "./UI/myPhoto.jpg";
 import Facebook_ico from "./UI/facebook-icon.png";
 import Inst from "./UI/instagramm.png";
 import Linkedin from "./UI/linkedin.png";
@@ -12,7 +11,17 @@ import FriendPhoto2 from "./UI/friend2.jpg";
 import FriendPhoto3 from "./UI/oigonuu1.jpg";
 import FriendPhoto4 from "./UI/oigonuu2.jpg";
 import Adverst from "./UI/adverst-photo.jpg";
+import MyPhoto from "./MyPhoto";
 const Main = () => {
+  // const changeValueOnscroll = () => {
+  //   const scrollValue = document.documentElement.scrollTop;
+  //   if (scrollValue > 100) {
+  //     Photo = "./UI/second.jpg";
+  //   } else {
+  //   }
+  // };
+  // window.addEventListener("scroll", changeValueOnscroll);
+
   return (
     <div className="container">
       <div className="adverst">
@@ -21,9 +30,7 @@ const Main = () => {
         </a>
       </div>
       <div className="main">
-        <div className="main-picture-change">
-          <img className="myPhoto" src={Photo} alt="My photo" />
-        </div>
+        <MyPhoto />
         <div className="main-about">
           <div className="bigTitle">Элмир Суркеев</div>
           <div className="underTitle">
@@ -34,13 +41,21 @@ const Main = () => {
             title="Фронт-енд разработчик"
             desc="Фронт-енд разрабочик это тот человек который создает различные веб приложения. Начиная с самых простых одностраничных лендингов до многофунциональных интернет магазинов. Фронтенд разрабочик очень востребованная проффесия и в тоже время ответственная проффесия"
           />
-          <button>Узнать больше</button>
+          <button>
+            <a href="https://www.linkedin.com/in/elmirbek-surkeev-b91876256">
+              Узнать больше
+            </a>
+          </button>
 
           <MainInfo
             title="ментор проекта Ойгонуу"
             desc="Проект Ойгонуу это просто потрясающий проект в котором я начал обучаться сфере IT. С самого начал проекта он был неизвестным проектом, но со временем его популярность выросла. На данный момент у проекта Ойгонуу около 80 выпустников и 100 учащихся в Южной части Кыргызстана"
           />
-          <button>Пригласить на собеседование</button>
+          <button>
+            <a href="https://www.linkedin.com/in/elmirbek-surkeev-b91876256">
+              Пригласить на собеседование
+            </a>
+          </button>
           <MainInfo
             title="о себе"
             desc="Мне 17 лет. Начал изучать программирование с 15 лет поводом стала встреча с крутым программистов имя не помню, но вел себя очень вежливо и своими манерами он показал мне что проффесия тоже влияет на человека как его семья. Он наслаждался работой знал многое, но в тоже время был скромным и умел слушать разговор и грамотно поддерживать "
@@ -56,6 +71,24 @@ const Main = () => {
               Узнать больше о проекте
             </a>
           </button>
+          <MainInfo
+            title="Фото"
+            desc="В целом веду очень активынй образ жизни. Много чем увлекаюсь и учавствую в различным мероприятих"
+          />
+          <div className="contacts-photo">
+            <div className="friends-photo deletedPhotos">
+              <img src={FriendPhoto} alt="my friends" />
+            </div>
+            <div className="friends-photo">
+              <img src={FriendPhoto4} alt="my friends" />
+            </div>
+            <div className="friends-photo">
+              <img src={FriendPhoto2} alt="my friends" />
+            </div>
+            <div className="friends-photo deletedPhotos">
+              <img src={FriendPhoto3} alt="my friends" />
+            </div>
+          </div>
           <MainInfo title="мой соц сети" />
           <div className="contacts">
             <div className="social-app">
@@ -78,21 +111,6 @@ const Main = () => {
               <a href="#">
                 <img src={Telegram} alt="Telegramm Profile" />
               </a>
-            </div>
-          </div>
-          <MainInfo desc="В целом веду очень активынй образ жизни. Много чем увлекаюсь и учавствую в различным мероприятих" />
-          <div className="contacts-photo">
-            <div className="friends-photo">
-              <img src={FriendPhoto} alt="my friends" />
-            </div>
-            <div className="friends-photo">
-              <img src={FriendPhoto4} alt="my friends" />
-            </div>
-            <div className="friends-photo">
-              <img src={FriendPhoto2} alt="my friends" />
-            </div>
-            <div className="friends-photo">
-              <img src={FriendPhoto3} alt="my friends" />
             </div>
           </div>
           <div className="developMan">
