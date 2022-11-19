@@ -13,15 +13,6 @@ import FriendPhoto4 from "./UI/oigonuu2.jpg";
 import Adverst from "./UI/adverst-photo.jpg";
 import MyPhoto from "./MyPhoto";
 const Main = () => {
-  // const changeValueOnscroll = () => {
-  //   const scrollValue = document.documentElement.scrollTop;
-  //   if (scrollValue > 100) {
-  //     Photo = "./UI/second.jpg";
-  //   } else {
-  //   }
-  // };
-  // window.addEventListener("scroll", changeValueOnscroll);
-
   return (
     <div className="container">
       <div className="adverst">
