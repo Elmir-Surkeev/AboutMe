@@ -8,5 +8,4 @@ const MainInfo = (props) => {
     </div>
   );
 };
-
 export default MainInfo;
